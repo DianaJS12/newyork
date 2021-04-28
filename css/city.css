@@ -1,0 +1,147 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.banner_header{
+    background: url("https://i.pinimg.com/originals/e3/20/0d/e3200dd68e54ef25e2d593561f1e3ffd.jpg") center / cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner_header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( to top , black , transparent);
+}
+.center_header{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.inline_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inline_header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 0;
+}
+.logo li a img{
+    width: 200px;
+}
+.inline_header ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 15px 0;
+}
+.left_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.right_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.left_list{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+.right_list{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.card{
+    background: url("https://c4.wallpaperflare.com/wallpaper/576/761/86/manhattan-city-new-york-city-metropolis-wallpaper-preview.jpg") center / cover;
+    width: 350px;
+    height: 350px;
+    border: 1px solid white;
+}
+.card_title{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.card_title a{
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: grey;
+    padding: 10px 16px;
+   
+}
+.card1{
+    background: url("https://kfmradio.com/sites/default/files/thumbnails/image/new_york_city_street_pexels.jpeg") center / cover;
+}
+.card2{
+    background: url("https://wallup.net/wp-content/uploads/2016/01/204759-New_York_City-bridge-architecture-street-urban-USA-car-building-748x521.jpg") center / cover;
+}
+.toggle_icon li a i{
+    color: rgb(224, 164, 96);
+    font-size: 30px;
+}
+.toggle_icon{
+    display: none;
+}
+.city {
+    background: rgba(255, 255, 255, 0.815);
+    color: black;
+   border: 2px solid;
+    margin: 0;
+    padding: 0;
+    
+}
+@media (max-width:1050px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}
+@media(max-width:750px){
+    .left_list,
+    .right_list{
+        display: none;
+    }
+    .toggle_icon{
+        display: block;
+    }
+    .banner_header{
+        height: 100%;
+    }
+    .title p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .title{
+        padding: 0;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .banner_header{
+        padding-bottom: 40%;
+    }
+}
